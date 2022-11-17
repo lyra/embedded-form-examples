@@ -4,12 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:examples": "time sh scripts/build.sh",
+    "build": "time sh scripts/build.sh",
     "lint": "eslint --ext .js examples",
     "lintfix": "eslint --fix --ext .js examples",
     "prettier": "prettier --write \"examples/**/*.js\"",
     "server": "sh scripts/server.sh",
-    "e2e:server": "http-server ./.examples/"
+    "e2e:server": "http-server ./.examples/",
+    "test": "npx playwright test"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/lyra/embedded-form-examples#readme",
   "devDependencies": {
+    "@playwright/test": "^1.28.0",
     "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
