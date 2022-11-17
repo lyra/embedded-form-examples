@@ -1,0 +1,36 @@
+{
+  "name": "embedded-form-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build:examples": "time sh scripts/build.sh",
+    "lint": "eslint --ext .js examples",
+    "lintfix": "eslint --fix --ext .js examples",
+    "prettier": "prettier --write \"examples/**/*.js\"",
+    "server": "sh scripts/server.sh",
+    "e2e:server": "http-server ./.examples/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lyra/embedded-form-examples.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lyra/embedded-form-examples/issues"
+  },
+  "homepage": "https://github.com/lyra/embedded-form-examples#readme",
+  "devDependencies": {
+    "eslint": "8.23.1",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "gulp": "^4.0.2",
+    "gulp-debug": "^3.2.0",
+    "gulp-replace": "1.1.3",
+    "gulp-run": "^1.7.0",
+    "http-server": "14.1.1",
+    "prettier": "2.7.1"
+  }
+}
