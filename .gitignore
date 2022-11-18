@@ -105,6 +105,7 @@ dist
 
 .history
 .examples
+.server
 /test-results/
 /playwright-report/
 /playwright/.cache/
