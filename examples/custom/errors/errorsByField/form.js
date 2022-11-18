@@ -21,7 +21,7 @@ const setupForm = async () => {
   // Load payment library using KRGlue dep
   let { KR, result } = await KRGlue.loadLibrary(endpoint, publicKey)
   // Set the payment token (should be previously generated)
-  await KR.setFormConfig({ formToken })
+  await KR.setFormConfig({ formToken, language: 'en' })
   // Payment done callback register
   await KR.onSubmit(response => {
     // The payment response is here
@@ -48,8 +48,10 @@ const setupForm = async () => {
     fields: {
       events: {
         onUpdate: data => {
-          for (const $error of document.querySelectorAll(`.field-error`))
+          for (const $error of document.querySelectorAll(`.field-error`)) {
             $error.classList.remove('visible')
+            $error.innerHTML = ''
+          }
         }
       }
     }
