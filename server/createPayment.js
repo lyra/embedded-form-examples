@@ -1,7 +1,7 @@
 const axios = require('axios').default
 
 exports.createFormToken = async paymentConf => {
-  const createPaymentEndpoint = `https://~~CHANGE_ME_USER~~:~~CHANGE_ME_PASSWORD~~@~~CHANGE_ME_ENDPOINT_NO_HTTPS~~/api-payment/V4/Charge/CreatePayment`
+  const createPaymentEndpoint = `https://~~CHANGE_ME_USER~~:~~CHANGE_ME_PASSWORD~~@~~CHANGE_ME_API_ENDPOINT_ONLY_DOMAIN_NAME~~/api-payment/V4/Charge/CreatePayment`
 
   try {
     const response = await axios.post(createPaymentEndpoint, paymentConf, {

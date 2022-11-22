@@ -1,9 +1,9 @@
 import KRGlue from '@lyracom/embedded-form-glue'
 
-const endpoint = '~~CHANGE_ME_ENDPOINT~~'
+const endpoint = '~~CHANGE_ME_JAVASCRIPT_ENDPOINT~~'
 const publicKey = '~~CHANGE_ME_PUBLIC_KEY~~'
 const CREATE_PAYMENT_ENDPOINT = 'http://localhost:3000/createPayment'
-const CREATE_PAYMENT_CONF = { amount: 10000, currency: 'USD' }
+const CREATE_PAYMENT_CONF = { amount: 10000, currency: 'EUR' }
 
 const getFormToken = async () => {
   const response = await fetch(CREATE_PAYMENT_ENDPOINT, {

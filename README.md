@@ -15,6 +15,16 @@ This is a repository of all the different kinds of integrations that can be done
 
 The examples included are fully functional, in order to run them, just execute the following:
 
+### Add your API Keys
+
+Add your server API Keys and endpoints in:
+
+- in server/createPayment.js line 4
+- in server/index.js line 36
+
+And Client API Keys and enpoints in:
+
+- examples/custom/errors/errorsByField/form.js lines 3 to 5
 ### Build
 
 ```Shell
@@ -38,9 +48,9 @@ To serve the examples, set up the static server with:
 npm run e2e:server
 ```
 
-After that you can access to the examples on:
+After that you can access to the example path:
 
-http://127.0.0.1:8080/[examplepath]
+http://127.0.0.1:8080/custom/errors/errorsByField/
 
 ## Tests
 
