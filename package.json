@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/lyra/embedded-form-examples#readme",
   "devDependencies": {
-    "@playwright/test": "^1.28.0",
+    "@playwright/test": "^1.52.0",
     "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",

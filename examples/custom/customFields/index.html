@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Cutom Fields</title>
+
+    <!-- theme and plugins. should be loaded in the HEAD section -->
+    <link
+      rel="stylesheet"
+      href="~~CHANGE_ME_JAVASCRIPT_ENDPOINT~~/static/js/krypton-client/V4.0/ext/neon-reset.css"
+    />
+    <script src="~~CHANGE_ME_JAVASCRIPT_ENDPOINT~~/static/js/krypton-client/V4.0/ext/neon.js"></script>
+    <style>
+      body {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      #myPaymentForm{
+        display: flex;
+        flex-direction: column;
+        gap: 10px
+      }
+
+      .kr-standalone-payment-button{
+        width: 100%
+      }
+
+      .checkboxContainer {
+        display: flex;
+        flex-direction: row;
+        gap:10px;
+      }
+    </style>
+  </head>
+  <body>
+  
+    <div id="myPaymentForm">
+  
+      <div class="kr-smart-form" kr-single-payment-button kr-card-form-expanded>
+      </div>
+   
+    <div class="checkboxContainer">
+      <!-- custom checkbox field -->
+      <input type='checkbox' name='acme-terms' id="checkboxExample" />
+      <label for="acme-terms">I accept the general conditions</label>
+    </div>
+    <div class="kr-standalone-payment-button"></div>
+  
+    </div>
+  
+    <script src="./dist.js"></script>
+  </body>
+  
+  </html>
