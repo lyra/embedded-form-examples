@@ -10,6 +10,7 @@ This is a repository of all the different kinds of integrations that can be done
 ## Examples
 
 - [custom/errors/errorsByField][custom/errors/errorsByField]: When there is an error on a specific field, displays the error on an element behind it.
+- [custom/customFields][custom/customFields]: How to add an additional checkbox with the form styles and make it mandatory
 
 ## Installation
 
@@ -25,6 +26,9 @@ Add your server API Keys and endpoints in:
 And Client API Keys and enpoints in:
 
 - examples/custom/errors/errorsByField/form.js lines 3 to 5
+ and/or in 
+ - examples/custom/customFields/form.js lines 3 to 5
+
 ### Build
 
 ```Shell
@@ -51,10 +55,12 @@ npm run e2e:server
 After that you can access to the example path:
 
 http://127.0.0.1:8080/custom/errors/errorsByField/
+http://127.0.0.1:8080/custom/customFields/
+
 
 ## Tests
 
-Tu run the included e2e tests:
+To run the included e2e tests:
 
 ```Shell
 npm run test
