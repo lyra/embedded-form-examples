@@ -54,8 +54,8 @@ npm run e2e:server
 
 After that you can access to the example path:
 
-http://127.0.0.1:8080/custom/errors/errorsByField/
-http://127.0.0.1:8080/custom/customFields/
+- http://127.0.0.1:8080/custom/errors/errorsByField/
+- http://127.0.0.1:8080/custom/customFields/
 
 
 ## Tests
